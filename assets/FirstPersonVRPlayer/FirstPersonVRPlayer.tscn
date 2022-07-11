@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/FirstPersonVRPlayer/FirstPersonVRPlayer.gd" type="Script" id=1]
+[ext_resource path="res://assets/FirstPersonVRPlayer/ARVROrigin.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.6
+height = 1.5
+
+[sub_resource type="CubeMesh" id=2]
+
+[node name="FirstPersonVRPlayer" type="KinematicBody"]
+input_capture_on_drag = true
+script = ExtResource( 1 )
+
+[node name="Collision" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Head" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="ARVROrigin" type="ARVROrigin" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+script = ExtResource( 3 )
+
+[node name="ARVRCamera" type="ARVRCamera" parent="Head/ARVROrigin"]
+far = 4485.3
+
+[node name="TestBox" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.88843 )
+visible = false
+mesh = SubResource( 2 )
+material/0 = null

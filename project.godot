@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="FirstPersonVRPlayer"
+run/main_scene="res://assets/FirstPersonVRPlayer_Example/scenes/VR/VR.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_environment="res://assets/FirstPersonVRPlayer_Example/environments/FirstPersonVRPlayer_Example.tres"

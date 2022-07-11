@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Futurismo/FuturisticTower_1.tscn" type="PackedScene" id=1]
+
+[node name="FuturisticCity" type="Spatial"]
+
+[node name="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.4789, -62.4294, 253.904 )
+
+[node name="Spatial4" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 110.901, -62.4294, 113.263 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.4789, -304.973, 115.939 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 294.256, -62.4294, 171.816 )
+
+[node name="Spatial5" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 110.901, -289.887, 24.3769 )
