@@ -8,7 +8,7 @@
 script = ExtResource( 2 )
 
 [node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.511548, 0, 0.859255, 0, 1, 0, -0.859255, 0, 0.511548, 1.76742, -84.8492, -207.119 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76742, -84.8492, -207.119 )
 
 [node name="FuturisticCity" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1834, -21.5985, -292.464 )

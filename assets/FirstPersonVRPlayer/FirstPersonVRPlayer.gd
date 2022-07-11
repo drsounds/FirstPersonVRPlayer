@@ -39,4 +39,4 @@ func _physics_process(delta) -> void:
 			(Input.get_action_strength("forward") - Input.get_action_strength("backward"))
 		)
 
-		var v = move_and_slide(direction * 10)
+		var v = move_and_slide(direction * 10 * -1)

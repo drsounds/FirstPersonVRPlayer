@@ -12,11 +12,10 @@ func _ready():
 
 
 func _input(event):
-	if event is InputEventJoypadButton:
-		if event.is_action_pressed("lying"):
-			rotate_x(PI / 2)
-		if event.is_action_pressed("standing"):
-			rotate_x(PI * 1.5)
+	if event.is_action_pressed("lying"):
+		rotate_x(PI / 2)
+	if event.is_action_pressed("standing"):
+		rotate_x(PI * 1.5)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
