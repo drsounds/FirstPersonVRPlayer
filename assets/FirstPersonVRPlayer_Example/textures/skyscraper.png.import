@@ -4,15 +4,16 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.s3tc.stex"
 path.etc2="res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.etc2.stex"
+path.etc="res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.etc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
+"imported_formats": [ "s3tc", "etc2", "etc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/FirstPersonVRPlayer_Example/textures/skyscraper.png"
-dest_files=[ "res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.s3tc.stex", "res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.etc2.stex" ]
+dest_files=[ "res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.s3tc.stex", "res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.etc2.stex", "res://.import/skyscraper.png-f4681d17cbd05eb3d00c09c58ff4bf41.etc.stex" ]
 
 [params]
 
