@@ -11,6 +11,11 @@ func _ready():
 	if arvr_interface and arvr_interface.initialize():
 		get_viewport().arvr = true
 
+func _input(event):
+	if event.is_action_pressed("restart"):
+		get_tree().change_scene("res://assets/FirstPersonVRPlayerExample/scenes/VR.tscn")
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

@@ -6,7 +6,7 @@ var is_flying = false
 
 var velocity := Vector3()
 var hoist := Vector3()
-var gravity = 60
+var gravity = 2
 var bounce := Vector3()
 # Move
 var direction := Vector3()
@@ -45,7 +45,7 @@ func _input(event):
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
-			velocity.y = 29
+			velocity.y = 3
 
 func _physics_process(delta) -> void:	  
 	if velocity.y > -500:
@@ -53,7 +53,10 @@ func _physics_process(delta) -> void:
 	if is_flying and velocity.y < 0.5:
 		velocity.y = -bounce.y * 0.10
 		bounce.y *= 0.1
- 
+
+	if is_on_floor() and velocity.y < 0:
+		velocity.y = 0
+	
 	var h_rot = self.global_transform.basis.get_euler().y
 	if Input.is_action_pressed("decrease_gravity"):
 		gravity = -10
@@ -75,14 +78,14 @@ func _physics_process(delta) -> void:
 		var v = move_and_slide(hoist * 1)
 	
 	if Input.is_action_pressed("forward"):
-		move_and_slide(forward * 10) 
+		move_and_slide(forward * 5) 
 	if Input.is_action_pressed("backward"):
 		var backward = -forward
-		move_and_slide(backward * 10) 
+		move_and_slide(backward * 5) 
 
 	if Input.is_action_pressed("left"):
-		move_and_slide(-forward.cross(Vector3.UP) * 1)
+		move_and_slide(-forward.cross(Vector3.UP) * 5)
 	if Input.is_action_pressed("right"):
-		move_and_slide(forward.cross(Vector3.UP) * 1)
+		move_and_slide(forward.cross(Vector3.UP) * 5)
 	
 	move_and_slide(velocity * 10)

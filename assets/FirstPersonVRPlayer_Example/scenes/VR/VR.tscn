@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/VR/VR.gd" type="Script" id=2]
 [ext_resource path="res://assets/FirstPersonVRPlayer/FirstPersonVRPlayer.tscn" type="PackedScene" id=3]
 
-[node name="Spatial" type="Spatial"]
+[node name="Futuristic scene" type="Spatial"]
 script = ExtResource( 2 )
 
 [node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
