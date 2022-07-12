@@ -17,6 +17,30 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1834, -21.5985, -292.464 )
 [node name="Cloud" parent="." instance=ExtResource( 4 )]
 transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -616.127, -1217.83, 0 )
 
+[node name="Cloud6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -6899.25, -1217.83, 0 )
+
+[node name="Cloud7" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, 6831.55, -1217.83, 0 )
+
+[node name="Cloud8" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -2268.32, -1217.83, 14045.1 )
+
+[node name="Cloud9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -139.657, -1217.83, -4425.97 )
+
+[node name="Cloud10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -4375.28, -1217.83, -4425.97 )
+
+[node name="Cloud11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -4375.28, -4426.58, -4425.97 )
+
+[node name="Cloud12" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, 4673.73, -4426.58, 14395.6 )
+
+[node name="Cloud13" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, 4673.73, -15306.3, 14395.6 )
+
 [node name="Cloud3" parent="." instance=ExtResource( 4 )]
 transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, 2602.98, -6327.06, 0 )
 
