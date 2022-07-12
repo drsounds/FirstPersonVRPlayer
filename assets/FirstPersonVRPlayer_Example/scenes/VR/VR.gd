@@ -12,7 +12,7 @@ func _ready():
 		get_viewport().arvr = true
 
 func _input(event):
-	if event.is_action_pressed("restart"):
+	if event.is_action_pressed("restart") and event.get_action_strength("restart") == 1:
 		get_tree().change_scene("res://assets/FirstPersonVRPlayerExample/scenes/VR.tscn")
 
 

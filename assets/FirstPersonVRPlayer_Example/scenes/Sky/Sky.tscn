@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Cloud/Cloud_Clusters.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Futurismo/FuturisticTower_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/FirstPersonVRPlayer/FirstPersonVRPlayer.tscn" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0222343 )
+
+[node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.323, 614.67, -1084.77 )
+
+[node name="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3094, -19.9408, -9.62241 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3094, -531.972, -560.309 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3094, -426.595, -4.78029 )
+
+[node name="Futuristic_Tower_1" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1510.11 )

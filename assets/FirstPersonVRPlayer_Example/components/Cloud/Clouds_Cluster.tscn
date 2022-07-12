@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Cloud/Clouds.tscn" type="PackedScene" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2.42859, 0, 0, 0, 3.68289, 0, 0, 0, 2.37257, 0, 0, 0 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 0, 0, -28.9939 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 0, -8.09223, -45.7613 )
+
+[node name="Spatial4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 0, -8.09223, 34.8307 )
+
+[node name="Spatial5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 0, -4.37139, 34.8307 )
+
+[node name="Spatial6" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 18.7248, -4.37139, 59.1659 )
+
+[node name="Spatial7" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, 18.7248, -4.37139, 20.9917 )
+
+[node name="Spatial8" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, -27.6288, -4.37139, 49.5836 )
+
+[node name="Spatial9" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, -27.6288, -4.37139, -50.2241 )
+
+[node name="Spatial10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, -38.2212, -4.37139, -25.8521 )
+
+[node name="Spatial11" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.62428, 0, 0, 0, 2.21458, 0, 0, 0, 1.25088, -53.5532, -4.37139, -6.75343 )

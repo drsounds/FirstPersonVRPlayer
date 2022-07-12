@@ -1,44 +1,30 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/FuturisticCity.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/VR/VR.gd" type="Script" id=2]
 [ext_resource path="res://assets/FirstPersonVRPlayer/FirstPersonVRPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Cloud/cloud.tscn" type="PackedScene" id=4]
 
 [node name="Futuristic scene" type="Spatial"]
 script = ExtResource( 2 )
 
 [node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76742, -84.8492, -207.119 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.1558, 384.994, 331.932 )
 
 [node name="FuturisticCity" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1834, -21.5985, -292.464 )
 
-[node name="FuturisticCity8" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1834, -540.413, -288.989 )
+[node name="Cloud" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -616.127, -1217.83, 0 )
 
-[node name="FuturisticCity9" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -507.299, -540.413, -55.7892 )
+[node name="Cloud3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, 2602.98, -6327.06, 0 )
 
-[node name="FuturisticCity10" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -507.299, -540.413, -688.164 )
+[node name="Cloud4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2370.12, 0, 0, 0, 1846.41, 0, 0, 0, 1492.81, -5564.08, -10920.4, 2398.53 )
 
-[node name="FuturisticCity11" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -844.926, -540.413, -688.164 )
+[node name="Cloud5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2370.12, 0, 0, 0, 1846.41, 0, 0, 0, 1492.81, 2841, 2104.98, 2398.53 )
 
-[node name="FuturisticCity3" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -492.502, -21.5985, 312.531 )
-
-[node name="FuturisticCity5" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -492.502, -21.5985, -826.641 )
-
-[node name="FuturisticCity6" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -944.654, -21.5985, -826.641 )
-
-[node name="FuturisticCity7" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 257.815, -21.5985, -826.641 )
-
-[node name="FuturisticCity4" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1002.56, -21.5985, -9.04877 )
-
-[node name="FuturisticCity2" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -488.084, -21.5985, -250.429 )
+[node name="Cloud2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 412.46, 0, 0, 0, 235.257, 0, 0, 0, 229.372, 1622.22, -631.134, 0 )

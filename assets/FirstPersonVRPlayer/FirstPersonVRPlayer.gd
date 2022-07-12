@@ -6,7 +6,7 @@ var is_flying = false
 
 var velocity := Vector3()
 var hoist := Vector3()
-var gravity = 2
+var gravity = 3
 var bounce := Vector3()
 # Move
 var direction := Vector3()
@@ -45,10 +45,13 @@ func _input(event):
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
-			velocity.y = 3
+			velocity.y = 30
 
-func _physics_process(delta) -> void:	  
-	if velocity.y > -500:
+func _physics_process(delta) -> void:	
+	print(self.transform.origin.y)
+	if self.transform.origin.y < -8000:
+		self.transform.origin.y = -self.transform.origin.y
+	if velocity.y > -800:
 		velocity.y -= gravity * delta 
 	if is_flying and velocity.y < 0.5:
 		velocity.y = -bounce.y * 0.10
