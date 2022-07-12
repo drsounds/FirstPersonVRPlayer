@@ -48,7 +48,7 @@ func _input(event):
 			velocity.y = 10
 
 func _physics_process(delta) -> void:	
-	print(self.transform.origin.y)
+	#print(self.transform.origin.y)
 	if self.transform.origin.y < -8000:
 		self.transform.origin.y = -self.transform.origin.y
 	if velocity.y > -800:
