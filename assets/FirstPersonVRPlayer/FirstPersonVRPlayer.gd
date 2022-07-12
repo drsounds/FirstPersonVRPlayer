@@ -45,7 +45,7 @@ func _input(event):
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
-			velocity.y = 30
+			velocity.y = 10
 
 func _physics_process(delta) -> void:	
 	print(self.transform.origin.y)
