@@ -88,3 +88,6 @@ transform = Transform( 2370.12, 0, 0, 0, 1846.41, 0, 0, 0, 1492.81, 2841, 2104.9
 
 [node name="Cloud2" parent="." instance=ExtResource( 4 )]
 transform = Transform( 412.46, 0, 0, 0, 235.257, 0, 0, 0, 229.372, 1622.22, -631.134, 0 )
+
+[node name="Spawn" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63801, 0, -6.03332 )

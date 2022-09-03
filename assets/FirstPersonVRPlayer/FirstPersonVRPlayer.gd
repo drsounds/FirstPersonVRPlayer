@@ -42,6 +42,15 @@ func _input(event):
 			else:
 				bounce.y = 0.5
 				is_flying = false
+				
+	if event.is_action_pressed("ui_reset"):
+		self.velocity = Vector3(0, 0, 0)
+		self.rotation = Vector3(0, 0, 0)
+		self.positition = Vector3(
+			$Spawn.position.x,
+			$Spawn.position.y,
+			$Spawn.position.z
+		)
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
