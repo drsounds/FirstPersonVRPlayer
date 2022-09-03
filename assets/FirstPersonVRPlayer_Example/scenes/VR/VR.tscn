@@ -31,7 +31,7 @@ script = ExtResource( 2 )
 transform = Transform( 4.29621, 0, 0, 0, 1, 0, 0, 0, 3.93475, -0.00295925, -0.869461, 0.00977421 )
 
 [node name="Bridge" parent="Spatial" instance=ExtResource( 1 )]
-transform = Transform( 0.889134, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0538044, 0.0848838, -4.71654 )
+transform = Transform( -3.88653e-08, 0, -0.915866, 0, 0.999997, 0, 0.970813, 0, -4.37114e-08, 3.22304, 0.0848838, -1.50375 )
 
 [node name="Spatial" type="Spatial" parent="Spatial"]
 transform = Transform( 2.5279, 0, 0, 0, 1, 0, 0, 0, 2.4007, 0, 0, -1.47249 )
