@@ -26,6 +26,7 @@ albedo_color = Color( 0.776471, 0.627451, 0.45098, 1 )
 script = ExtResource( 2 )
 
 [node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3992, 0, -5.61299 )
 
 [node name="Spatial" type="Spatial" parent="."]
 transform = Transform( 4.29621, 0, 0, 0, 1, 0, 0, 0, 3.93475, -0.00295925, -0.869461, 0.00977421 )
