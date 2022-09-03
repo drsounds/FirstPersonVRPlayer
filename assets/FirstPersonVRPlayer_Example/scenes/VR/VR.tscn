@@ -1,18 +1,53 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/FuturisticCity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Fence/Bridge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/VR/VR.gd" type="Script" id=2]
 [ext_resource path="res://assets/FirstPersonVRPlayer/FirstPersonVRPlayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/FirstPersonVRPlayer_Example/components/Cloud/cloud.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/FirstPersonVRPlayer_Example/scenes/VR/Spatial.gd" type="Script" id=5]
+
+[sub_resource type="CylinderMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.329412, 0.890196, 0.286275, 1 )
+emission_enabled = true
+emission = Color( 0.25098, 0.25098, 0.25098, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CylinderMesh" id=6]
+bottom_radius = 0.8
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.776471, 0.627451, 0.45098, 1 )
 
 [node name="Futuristic scene" type="Spatial"]
 script = ExtResource( 2 )
 
 [node name="FirstPersonVRPlayer" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.1558, 384.994, 331.932 )
 
-[node name="FuturisticCity" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1834, -21.5985, -292.464 )
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 4.29621, 0, 0, 0, 1, 0, 0, 0, 3.93475, -0.00295925, -0.869461, 0.00977421 )
+
+[node name="Bridge" parent="Spatial" instance=ExtResource( 1 )]
+transform = Transform( 0.889134, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0538044, 0.0848838, -4.71654 )
+
+[node name="Spatial" type="Spatial" parent="Spatial"]
+transform = Transform( 2.5279, 0, 0, 0, 1, 0, 0, 0, 2.4007, 0, 0, -1.47249 )
+script = ExtResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../../../FirstPersonVRPlayer")
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Spatial/Spatial"]
+transform = Transform( 0.778792, 0, 0, 0, 8.51374, 0, 0, 0, 0.64476, 0, -8.32454, 0 )
+mesh = SubResource( 6 )
+skeleton = NodePath("../MeshInstance")
+material/0 = SubResource( 7 )
 
 [node name="Cloud" parent="." instance=ExtResource( 4 )]
 transform = Transform( 494.416, 0, 0, 0, 418.608, 0, 0, 0, 411.828, -616.127, -1217.83, 0 )

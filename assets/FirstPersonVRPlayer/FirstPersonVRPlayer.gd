@@ -45,12 +45,15 @@ func _input(event):
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
-			velocity.y = 10
+			velocity.y = 2
 
 func _physics_process(delta) -> void:	
 	#print(self.transform.origin.y)
 	if self.transform.origin.y < -8000:
 		self.transform.origin.y = -self.transform.origin.y
+	if self.transform.origin.y > 8100:
+		self.transform.origin.y = -self.transform.origin.y
+	
 	if velocity.y > -800:
 		velocity.y -= gravity * delta 
 	if is_flying and velocity.y < 0.5:
