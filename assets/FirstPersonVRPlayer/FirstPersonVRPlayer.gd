@@ -45,12 +45,10 @@ func _input(event):
 				
 	if event.is_action_pressed("ui_reset"):
 		self.velocity = Vector3(0, 0, 0)
+		self.gravity = 3
 		self.rotation = Vector3(0, 0, 0)
-		self.positition = Vector3(
-			$Spawn.position.x,
-			$Spawn.position.y,
-			$Spawn.position.z
-		)
+		var spawn = get_parent().find_node('Spawn')
+		self.transform.origin = spawn.transform.origin
 
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
@@ -74,15 +72,11 @@ func _physics_process(delta) -> void:
 	
 	var h_rot = self.global_transform.basis.get_euler().y
 	if Input.is_action_pressed("decrease_gravity"):
-		gravity = -10
-		if gravity < 0:
-			gravity = 0
+		gravity = gravity - 0.1
 		velocity.y = 0
 
 	if Input.is_action_pressed("increase_gravity"):
-		gravity = 10
-		if gravity > 0:
-			gravity = 10
+		gravity = gravity + 0.1
 	var forward = -camera.transform.basis.z.normalized()
 	if Input.is_action_pressed("hoist") || Input.is_action_pressed("sink"):
 		hoist = Vector3(
