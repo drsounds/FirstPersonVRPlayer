@@ -44,12 +44,15 @@ func _input(event):
 				is_flying = false
 				
 	if event.is_action_pressed("ui_reset"):
+		"""
 		self.velocity = Vector3(0, 0, 0)
 		self.gravity = 3
+		self.bounce = Vector3(0, 0, 0)
 		self.rotation = Vector3(0, 0, 0)
 		var spawn = get_parent().find_node('Spawn')
-		self.transform.origin = spawn.transform.origin
-
+		self.global_transform.origin = spawn.global_transform.origin
+		"""
+		get_tree().reload_current_scene()
 	if event.is_action_pressed("jump"):
 		if event.get_action_strength("jump") == 1:
 			velocity.y = 2
